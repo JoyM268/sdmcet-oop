@@ -17,14 +17,18 @@ public class ReverseArray {
         reverse(arr);
         System.out.println("The elements of array after reverse is:");
         System.out.println(Arrays.toString(arr));
+        in.close();
     }  
-
 
     static void reverse(int[] arr){
         for(int i = 0; i < arr.length/2; i++){
-            int temp = arr[i];
-            arr[i] = arr[arr.length - i - 1];
-            arr[arr.length - i - 1] = temp;
+            swap(arr, i, arr.length - i - 1);
         }
+    }
+
+    static void swap(int[] arr, int index1, int index2){
+        int temp = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = temp;
     }
 }
