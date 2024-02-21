@@ -1,3 +1,4 @@
+//Program to implement linked list
 import java.util.Scanner;
 
 public class linkedList {
