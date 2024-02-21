@@ -1,5 +1,5 @@
 //Program to find floor in a sorted array for a given target element
-//Ceiling is the largest element in the array which is smaller than or equal to the target element
+//Floor is the largest element in the array which is smaller than or equal to the target element
 
 import java.util.Scanner;
 
