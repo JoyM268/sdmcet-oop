@@ -1,11 +1,11 @@
-//Program to sort a array using bubble sort
+//Program to sort a array using selection sort
 import java.util.Arrays;
 
-public class BubbleSort {
+public class SelectionSort {
     public static void main(String[] args){
         int[] arr = {5, 2, 8, 6, 9, 1, 3}; //Contents of the array before sorting
         System.out.println("Before sorting\n" + Arrays.toString(arr));
-        bubbleSort(arr);
+        selectionSort(arr);
         System.out.println("After sorting\n" + Arrays.toString(arr));
     }
 
@@ -15,16 +15,17 @@ public class BubbleSort {
         arr[index2] = temp;
     }
 
-    static void bubbleSort(int[] arr){
+    static void selectionSort(int[] arr){
         for(int i = 0; i < arr.length - 1; i++){
-            boolean swap = false;
-            for(int j = 0; j < arr.length - i - 1; j++){
-                if(arr[j] > arr[j + 1]){
-                    swap(arr, j, j + 1);
-                    swap = true;
+            int min = i;
+            for(int j = i + 1; j < arr.length; j++){
+                if(arr[min] > arr[j]){
+                    min = j;
                 }
             }
-            if(!swap) break;
+            if(i != min){
+                swap(arr, i, min);
+            }
         }
     }
 }
