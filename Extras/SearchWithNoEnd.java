@@ -21,6 +21,7 @@ public class SearchWithNoEnd {
         } else{
             System.out.println("Element " + target + " not found");
         }
+        in.close();
     }
 
     static int[] findStartAndEndIndex(int[] arr, int target){
