@@ -13,6 +13,7 @@ public class SearchCharacter {
         } else{
             System.out.println("Character " + ch + " does not exist in the string " + str);
         }
+        in.close();
     }
     
     private static boolean search(String str, char target){
