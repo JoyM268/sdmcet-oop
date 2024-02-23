@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class floorArray {
+public class FloorArray {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the number of elements: ");
