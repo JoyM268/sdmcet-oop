@@ -15,7 +15,7 @@ public class SieveOfEratosthenes {
         boolean[] nums = new boolean[n + 1];
         Arrays.fill(nums, true);
         nums[0] = nums[1] = false; 
-        for(int i = 0; i <= n; i++){
+        for(int i = 0; i * i <= n; i++){
             if(nums[i]){
                 for(int j = i * i; j <= n; j = j + i){
                     nums[j] = false;
