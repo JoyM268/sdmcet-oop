@@ -2,7 +2,7 @@
 Considering this class extend the main class to showcase the working of two different shapes decided based on king of values supplied. */
 import java.util.Scanner;
 
-class shapes {
+class shapes{
     int l;
     int b;
 
@@ -24,7 +24,7 @@ class shapes {
     }
 }
 
-class shape2D {
+public class areaOfSquareOrRectangle {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter length = ");
