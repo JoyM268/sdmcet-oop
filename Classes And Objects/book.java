@@ -1,3 +1,31 @@
+/* Implement the following class diagram
+
+                            +--------------------------+
+                            |           book           |
+                            +--------------------------+
+                            |      title : String      |
+                            |      author : String     |
+                            |       type : String      |
+                            +--------------------------+
+                            | displayBookInfo() : void |
+                            +--------------------------+
+                                        ^
+                                        |
+               --------------------------------------------------
+               ^                                                ^
+               |                                                |
++-------------------------------+                +-------------------------------+   
+|           technical           |                |           nonTechnical        |
++-------------------------------+                +-------------------------------+
+|       course : String         |                |       course : String         |    
+|        price : float          |                |        price : float          |
++-------------------------------+                +-------------------------------+
+|   displayTechnical() : void   |                | displayNonTechnical() : void  |
+|       setPrice() : float      |                |       setPrice() : float      |
+| [Show discounted price of 5%] |                | [Show discounted price of 10%]|
++-------------------------------+                +-------------------------------+
+
+*/
 class book{
 	String title;
 	String author;
