@@ -35,7 +35,7 @@ public class builtInFunctions {
 		
 		System.out.println("Index of e in " +  s1 + " is = " + s1.indexOf('e'));
 		                
-		String s5 =  " Java World        ";
+		String s5 =  "  Java World Welcome  ";
 		System.out.println(s5 + "\nAfter triming\n" + s5.trim());
 		
 		System.out.println("Substring from index 2 in " + s5 + "is: " + s5.substring(2));
@@ -43,7 +43,7 @@ public class builtInFunctions {
 		System.out.println("Substring from index 2 to 6 in " + s5 + "is: " + s5.substring(2, 6));
 
 		System.out.println(s5 + " After split: ");
-		char[] c1 = s5.split(" ");
+		String[] c1 = s5.split(" ");
 		for(int i = 0; i < c1.length; i++){
 			System.out.println(c1[i]);
 		}
