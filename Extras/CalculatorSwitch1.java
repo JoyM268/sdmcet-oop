@@ -21,10 +21,10 @@ public class CalculatorSwitch1 {
                 System.out.println(num1 + " x " + num2 + " = " + (num1 * num2));
                 break;
             case '/':
-                if(num2 != 0) {
+                try{
                     System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
-                } else {
-                    System.out.println("Undefined");
+                } catch(Exception e){
+                    System.out.println("Error: " + e.getMessage());
                 }
                 break;
             default:
