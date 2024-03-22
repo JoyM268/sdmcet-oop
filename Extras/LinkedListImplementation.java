@@ -1,7 +1,7 @@
 //Program to implement linked list
 import java.util.Scanner;
 
-public class LinkedList {
+public class LinkedListImplementation {
 
     static class Node{
         int data;
