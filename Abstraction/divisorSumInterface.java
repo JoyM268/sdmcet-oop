@@ -9,7 +9,7 @@ public class divisorSumInterface {
 			System.out.println("n value beyond the limit");
 			System.exit(0);
 		}
-		MyCalculator m1 = new MyCalculator();
+		myCalculator m1 = new myCalculator();
 		System.out.println("Sum of divisors of " + n + ": " + m1.divisor_sum(n));
 	}
 }
