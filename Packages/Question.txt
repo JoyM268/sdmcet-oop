@@ -1,0 +1,3 @@
+child1, nonChild1 and parent classes have to be inside a package p1. 
+child2 and nonChild2 classes have to be inside a package p2.
+packageEx1.java is the main class and is outside both p1 and p2.

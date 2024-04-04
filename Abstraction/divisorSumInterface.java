@@ -1,3 +1,4 @@
+//Program to use the user defined class myCalculator
 import java.util.Scanner;
 
 public class divisorSumInterface {
