@@ -17,11 +17,11 @@ class SimpleCalculator{
         System.out.println(a + " - " + b + " = " + (a - b));
     }
 
-    void multiplication(){
+    void product(){
         System.out.println(a + " * " + b + " = " + (a * b)); 
     }
 
-    void division(){
+    void quotient(){
         if(b == 0){
             throw new ArithmeticException("Divide by 0 not Allowed");
         }else{
@@ -48,10 +48,10 @@ public class Q1 {
                 cal.difference();
                 break;
             case '*': 
-                cal.multiplication();
+                cal.product();
                 break;
             case '/':
-                cal.division();
+                cal.quotient();
                 break;
             default:
                 throw new IllegalArgumentException("Invalid Operator");
