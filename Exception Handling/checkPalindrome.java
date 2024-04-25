@@ -1,4 +1,5 @@
-// Write a Java Program that takes a string as command-line argument and checks whether the string is palindrome or not.
+/* Write a Java Program that takes a string as command-line argument and checks whether the string is palindrome or not.
+Use exceptions to print if not a palindrome. */
 
 class notPalindrome extends Exception{
     String s;
