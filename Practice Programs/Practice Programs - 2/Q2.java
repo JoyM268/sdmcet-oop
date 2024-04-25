@@ -1,5 +1,4 @@
-//Write a Java program that implements Simple Calculator.
-import java.util.Scanner;
+//Write a Java program that implements a simple calculator. The inputs are to be taken as command line arguments.
 
 class SimpleCalculator{
     int a, b;
@@ -30,15 +29,15 @@ class SimpleCalculator{
     }
 }
 
-class Q1 {
+class Q2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number 1: ");
-        int num1 = sc.nextInt();
-        System.out.print("Enter the number 2: ");
-        int num2 = sc.nextInt();
-        System.out.print("Enter the operator: ");
-        char op = sc.next().charAt(0);
+        if(args.length < 3){
+            System.out.println("Enter the inputs as arguements");
+            System.exit(0);
+        }
+        int num1 = Integer.parseInt(args[0]);
+        char op = args[1].charAt(0);
+        int num2 = Integer.parseInt(args[2]);
         SimpleCalculator cal = new SimpleCalculator(num1, num2);
         switch(op){
             case '+': 

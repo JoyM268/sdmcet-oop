@@ -1,4 +1,5 @@
-//Write a Java program that implements Simple Calculator.
+/* Write a Java program that implements a simple calculator. The inputs are to be read from the keyboard. 
+[Hint: Use Scanner class object to read the input from keyboard] */ 
 import java.util.Scanner;
 
 class SimpleCalculator{
@@ -30,7 +31,7 @@ class SimpleCalculator{
     }
 }
 
-class Q1 {
+class Q3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number 1: ");

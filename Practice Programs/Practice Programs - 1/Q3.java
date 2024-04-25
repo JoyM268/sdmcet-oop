@@ -53,7 +53,7 @@ class stack{
     }
 }
 
-public class Q3 {
+class Q3 {
     public static void main(String[] args){
         stack s = new stack(10);    
         s.push(15);
