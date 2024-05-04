@@ -15,7 +15,7 @@ class numbers{
     }
 }
 
-public class sumOfTwoNumbers {
+class sumOfTwoNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number 1: ");

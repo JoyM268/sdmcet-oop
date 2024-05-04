@@ -7,7 +7,7 @@ class circle{
 	}
 }
 
-public class circleAreaUsingDot {
+class circleAreaUsingDot {
 	public static void main(String[] args) {
 		circle c1 = new circle();
 		c1.radius = 10.5F;

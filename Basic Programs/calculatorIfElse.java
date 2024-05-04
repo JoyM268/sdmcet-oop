@@ -1,7 +1,7 @@
 //Program to implement a calculator which takes two numbers and a character as operator and prints result (using if else) 
 import java.util.Scanner;
 
-public class calculatorIfElse {
+class calculatorIfElse {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the two operands: ");

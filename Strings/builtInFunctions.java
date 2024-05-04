@@ -7,12 +7,12 @@
 //Triming a given string
 //Concatenating two strings
 //Find index of given character
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class builtInFunctions {
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);		
+		//Scanner sc = new Scanner(System.in);		
 		//Direct assigning
 		String s1 = "Hello";
 		

@@ -1,7 +1,7 @@
 //Program to use the user defined class myCalculator
 import java.util.Scanner;
 
-public class divisorSumInterface {
+class divisorSumInterface {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the value of n: ");

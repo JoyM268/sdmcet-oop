@@ -11,7 +11,7 @@ class circle1{
 	}
 }
 
-public class circleAreaUsingMethod {
+class circleAreaUsingMethod {
 	public static void main(String[] args) {
 		circle1 c1 = new circle1();
 		c1.setRadius(5.5f);

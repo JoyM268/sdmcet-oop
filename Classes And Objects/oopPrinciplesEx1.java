@@ -26,7 +26,7 @@ class employee extends person{
 	}
 }
 
-public class oopPrinciplesEx1 {
+class oopPrinciplesEx1 {
 	public static void main(String[] args) {
 		person p = new employee("abc", 21, 45000.00F);
 		System.out.println("DMD: base object is for child constructor");

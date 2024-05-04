@@ -1,7 +1,7 @@
 //Program to implement a calculator which takes two numbers and a character as operator and prints result (Switch)
 import java.util.Scanner;
 
-public class calculatorSwitch {
+class calculatorSwitch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the two operands: ");

@@ -11,7 +11,7 @@ class areas{
 	}
 }
 
-public class methodOverload1 {
+class methodOverload1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		areas a1 = new areas();

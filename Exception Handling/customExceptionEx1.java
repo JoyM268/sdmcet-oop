@@ -23,7 +23,7 @@ class outOfRange extends Exception{
     }
 }
 
-public class customExceptionEx1 {
+class customExceptionEx1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter any 3 integers: ");

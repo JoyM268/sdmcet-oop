@@ -8,7 +8,7 @@ class A{
 	}
 }
 
-public class staticFunction {
+class staticFunction {
 	public static void main(String[] args) {
 		A a1 = new A();
 		a1.f1();
