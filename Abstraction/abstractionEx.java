@@ -20,7 +20,7 @@ class B extends abstraction {
     }
 }
 
-public class abstractionEx {
+class abstractionEx {
     public static void main(String[] args) {
         //We can't create an instance of abstract class
         //abstraction a1 = new abstraction();

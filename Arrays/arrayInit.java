@@ -1,5 +1,5 @@
 //Demonstrate the declaration and initialization of arrays
-public class arrayInit {
+class arrayInit {
 	public static void main(String args[]) {
 		int a[] = new int[5]; //Declaration and instantiation of array
 		a[0] = 10; //Initialization

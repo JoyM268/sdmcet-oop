@@ -15,7 +15,7 @@ class banking extends bank {
 	}
 }
 
-public class bankInterest {
+class bankInterest {
 	public static void main(String[] args) {
 		// Cannot instantiate abstract class
 		// bank b1 = new bank();

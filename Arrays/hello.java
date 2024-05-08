@@ -1,5 +1,5 @@
 //Usage of length property and getClass() method in array
-public class hello {
+class hello {
 	public static void main(String[] args) {
 		//Declaration and instantiation of array
 		int[] iArr;

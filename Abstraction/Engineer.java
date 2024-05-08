@@ -15,7 +15,7 @@ abstract class Employee {
     }
 }
 
-public class Engineer extends Employee {
+class Engineer extends Employee {
     public Engineer(String name, int id) {
         super(name, id); // This statement is used to call super class constructor.
     }

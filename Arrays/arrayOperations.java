@@ -29,7 +29,7 @@ class operations {
     }
 }
 
-public class arrayOperations {
+class arrayOperations {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

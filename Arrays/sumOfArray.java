@@ -1,3 +1,4 @@
+//Program to find sum of all elements in the array
 import java.util.Scanner;
 
 class arrayOp {
@@ -10,7 +11,7 @@ class arrayOp {
     }
 }
 
-public class sumOfArray {
+class sumOfArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter size of arr:");
