@@ -1,8 +1,8 @@
 //Write a Java program that implements a stack
 class stack{
-    int[] stk;
-    int size;
-    int top;
+    private int[] stk;
+    private int size;
+    private int top;
     final static int DEFAULT_SIZE = 50;
 
     stack(){
@@ -27,40 +27,30 @@ class stack{
 
     void push(int element){
         if(isFull()){
-            throw new IllegalStateException("Stack Overflow");
+            System.out.println("Stack Overflow");
+            return;
         }
         stk[++top] = element;
     }
 
     int pop(){
         if(isEmpty()){
-            throw new IllegalStateException("Stack Underflow");
+            System.out.println("Stack Underflow");
+            return -1;
         }
         return stk[top--];
-    }
-
-    public String toString(){
-        if(top == -1){
-            return "[]";
-        }
-        StringBuilder str = new StringBuilder();
-        str.append("[");
-        for(int i = 0; i < top; i++){
-            str.append(stk[i] + ", ");
-        }
-        str.append(stk[top] + "]");
-        return str.toString();
     }
 }
 
 class Q3 {
     public static void main(String[] args){
         stack s = new stack(10);    
-        s.push(15);
-        s.push(18);
-        s.push(20);
-        System.out.println(s + "\n");
+        s.push(1);
+        s.push(2);
+        s.push(3);
         System.out.println("Element popped: " + s.pop());
-        System.out.println(s);
+        System.out.println("Element popped: " + s.pop());
+        s.push(4);
+        System.out.println("Element popped: " + s.pop());
     }
 }

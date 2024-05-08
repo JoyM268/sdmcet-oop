@@ -1,5 +1,4 @@
 // With a example show how interface is used in abstraction
-
 interface Bank{
     float getROI();
 }

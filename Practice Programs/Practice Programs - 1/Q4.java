@@ -13,7 +13,6 @@ class queue{
         rear = -1;
     }
 
-    
     queue(int size){
         maxSize = size;
         arr = new int[maxSize];
@@ -21,7 +20,7 @@ class queue{
         rear = -1;
     }
 
-    void insert(int element){
+    void enqueue(int element){
         if(rear == maxSize - 1){
             System.out.println("Queue is full");
             return;
@@ -29,7 +28,7 @@ class queue{
         arr[++rear] = element;
     }
 
-    int delete(){
+    int dequeue(){
         if(front > rear){
             System.out.println("Queue is empty");
             return -1;
@@ -41,33 +40,18 @@ class queue{
         }
         return element;
     }
-
-    public String toString(){
-        if(front > rear){
-            return "[]";
-        }
-        StringBuilder str = new StringBuilder();
-        str.append("[");
-        for(int i = front; i < rear; i++){
-            str.append(arr[i] + ", ");
-        }
-        str.append(arr[rear] + "]");
-        return str.toString();
-    }
 }
-
 
 class Q4 {
     public static void main(String[] args) {
         queue q = new queue(5);
-        q.insert(1);
-        q.insert(2);
-        q.insert(3);    
-        q.insert(4);
-        q.insert(5);
-        q.insert(6);
-        System.out.println(q);
-        System.out.println("Popped element: " + q.delete());
-        System.out.println(q);
+        q.enqueue(1);
+        q.enqueue(2);
+        q.enqueue(3);
+        q.enqueue(4);
+        System.out.println("The dequeued element is: " + q.dequeue());
+        System.out.println("The dequeued element is: " + q.dequeue());
+        q.enqueue(5);
+        System.out.println("The dequeued element is: " + q.dequeue());
     }
 }
