@@ -62,7 +62,7 @@ class Consumer implements Runnable {
 }
 
 class Q6 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Q q = new Q();
         new Producer(q);
         new Consumer(q);
