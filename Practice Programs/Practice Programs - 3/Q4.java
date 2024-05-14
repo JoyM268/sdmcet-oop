@@ -3,7 +3,7 @@ multiplication of matrices of arbitrary order. Also, proper error handling mecha
 Methodology: Matrix multiplication is implemented using the formula: Cij = Aik * Bkj. This formula is used for generating each element 
 of the final matrix. The multiplication must be performed by separate threads. Ex: If order of final matrix is 3X3, then total of 9 threads
 should be created; each thread computing individual elements of the final matrix. */
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Scanner;
 
 class matrixMultiplacationNotPossible extends Exception{
@@ -84,6 +84,14 @@ class Q4{
                 }
             }
         }
-        System.out.println(Arrays.deepToString(ansMatrix)); //This method prints the matrix
+        
+        //System.out.println(Arrays.deepToString(ansMatrix)); //This method prints the matrix
+        System.out.println("The resultant array is:");
+        for(int[] row : ansMatrix){
+            for(int ele : row){
+                System.out.print(ele + " ");
+            }
+            System.out.println();
+        }
     }
 }
