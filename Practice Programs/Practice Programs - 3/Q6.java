@@ -4,12 +4,13 @@ class Q {
     boolean valueSet = false;
 
     synchronized int get() {
-        while (!valueSet)
+        while (!valueSet){
             try {
                 wait();
             } catch (InterruptedException e) {
                 System.out.println("InterruptedException caught");
             }
+        }
         System.out.println("Got: " + n);
         valueSet = false;
         notify();
@@ -17,12 +18,13 @@ class Q {
     }
 
     synchronized void put(int n) {
-        while (valueSet)
+        while (valueSet){
             try {
                 wait();
             } catch (InterruptedException e) {
                 System.out.println("InterruptedException caught");
             }
+        }
         this.n = n;
         valueSet = true;
         System.out.println("Put: " + n);
