@@ -84,6 +84,6 @@ class Q4{
                 }
             }
         }
-        System.out.println(Arrays.deepToString(ansMatrix));
+        System.out.println(Arrays.deepToString(ansMatrix)); //This method prints the matrix
     }
 }
