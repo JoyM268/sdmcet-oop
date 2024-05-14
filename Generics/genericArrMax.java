@@ -1,4 +1,5 @@
-/* Write a generic function to print maximum element in the array
+/* Write a generic function to print maximum element in the array.
+Note: 
 Since generic method of comparision of objects works on any datatype we cannot apply the comparision operators like <, >, == , !=, <= and >= 
 Instead java has a single handy tool called comparable interface that has a function called 'compareTo' which returns 
 i] = 0, if the 2 objects are equal.
