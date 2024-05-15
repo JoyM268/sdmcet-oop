@@ -42,30 +42,29 @@ class Q3{
         cse.ensureCapacity(25);
 
         //Add 3 students
-        student s1 = new student(1, "2SD2201", "ABC", 1, 1234532213);
-        student s2 = new student(2, "2SD2202", "EFG", 2, 1234237213);
-        student s3 = new student(3, "2SD2203", "HIJ", 2, 1234534513);
+        student s1 = new student(1, "2SD22CS038", "Joy", 4, 1234567890);
+        student s2 = new student(2, "2SD22CS400", "Rahul", 1, 1534237213);
+        student s3 = new student(3, "2SD22CS350", "Rachit", 2, 1634534513);
         Collections.addAll(cse, s1, s2, s3);
 
         //Remove students with rollno 2 and 3
-        Iterator<student> itr = cse.iterator();
-        while(itr.hasNext()){
-            student s = itr.next(); 
+        for(int i = 0; i < cse.size(); i++){
+            student s = cse.get(i);
             if(s.rollNo == 2 || s.rollNo == 3){
-                itr.remove();
+                cse.remove(i);
+                i--;
             }
         }
 
         //Add 2 Students
-        student s4 = new student(4, "2SD2204", "KLM", 1, 1232893213);
-        student s5 = new student(5, "2SD2205", "NOP", 1, 1323534513);
+        student s4 = new student(4, "2SD22CS300", "Abhimanyu", 1, 1232893213);
+        student s5 = new student(5, "2SD22CS900", "Raghav", 1, 1323534513);
         Collections.addAll(cse, s4, s5);
 
         //Information of currently enrolled students
         System.out.println("The student details of currently enrolled students are:");
-        itr = cse.iterator();
-        while(itr.hasNext()){
-            itr.next().display();
+        for(student s : cse){
+            s.display();
             System.out.println();
         }
     }
