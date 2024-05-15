@@ -8,7 +8,6 @@ iv) After a month, two students get enrolled in the course
 v) Print the information of all the students currently enrolled in the course */
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 
 class student{
     int rollNo;
