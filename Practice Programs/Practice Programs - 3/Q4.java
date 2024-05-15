@@ -87,8 +87,8 @@ class Q4{
         
         //System.out.println(Arrays.deepToString(ansMatrix)); //This method prints the matrix
         System.out.println("The resultant array is:");
-        for(int[] row : ansMatrix){
-            for(int ele : row){
+        for(int[] arr : ansMatrix){
+            for(int ele : arr){
                 System.out.print(ele + " ");
             }
             System.out.println();
