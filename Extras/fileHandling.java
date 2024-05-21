@@ -1,7 +1,6 @@
 //Program to demonstrate file handling in java
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.InputStream;
 
 public class fileHandling {
     public static void main(String[] args) throws Exception{
