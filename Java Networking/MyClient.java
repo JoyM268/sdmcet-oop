@@ -4,7 +4,7 @@ A client sends hello message to the server ans exits, server inturn reads the me
 import java.io.*;
 import java.net.*;
 
-public class MyClient {
+class MyClient {
     public static void main(String[] args) {
         try {
             Socket s = new Socket("localhost", 6000);

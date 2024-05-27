@@ -3,7 +3,7 @@
 import java.io.*;
 import java.net.*;
 
-public class ServerReadWrite {
+class ServerReadWrite {
     public static void main(String[] args) {
         try {
             ServerSocket ss = new ServerSocket(5000);
@@ -13,6 +13,7 @@ public class ServerReadWrite {
             String msg = din.readUTF();
             dout.writeUTF("Hello Client");
             System.out.println("The message from client is: " + msg);
+            ss.close();
         } catch (Exception e) {
             System.out.println(e);
         }
