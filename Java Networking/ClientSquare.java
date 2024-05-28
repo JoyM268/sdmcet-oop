@@ -14,11 +14,11 @@ class ClientSquare {
             Socket s = new Socket("localhost", 5000);
             DataInputStream din = new DataInputStream(s.getInputStream());
             DataOutputStream dout = new DataOutputStream(s.getOutputStream());
-            String msg1 = din.readUTF();
+            String msg1 = (String)din.readUTF();
             System.out.println(msg1 + ":");
             int num = sc.nextInt();
             dout.writeUTF(Integer.toString(num));
-            String msg2 = din.readUTF();
+            String msg2 = (String)din.readUTF();
             System.out.println("The square of the given number is: " + msg2);
             s.close();
             sc.close();

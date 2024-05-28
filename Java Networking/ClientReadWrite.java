@@ -10,7 +10,7 @@ class ClientReadWrite {
             DataOutputStream dout = new DataOutputStream(s.getOutputStream());
             DataInputStream din = new DataInputStream(s.getInputStream());
             dout.writeUTF("Hello Server");
-            String msg = din.readUTF();
+            String msg = (String)din.readUTF();
             System.out.println("The message from the server is: " + msg);
             s.close();
         }catch(Exception e){

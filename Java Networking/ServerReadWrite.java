@@ -10,7 +10,7 @@ class ServerReadWrite {
             Socket s = ss.accept();
             DataInputStream din = new DataInputStream(s.getInputStream());
             DataOutputStream dout = new DataOutputStream(s.getOutputStream());
-            String msg = din.readUTF();
+            String msg = (String)din.readUTF();
             dout.writeUTF("Hello Client");
             System.out.println("The message from client is: " + msg);
             ss.close();
