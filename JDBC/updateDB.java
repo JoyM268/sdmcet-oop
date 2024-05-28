@@ -1,4 +1,4 @@
-//Java program to demonstrate updating of values in database
+//Java program to demonstrate inserting of values in database
 import java.sql.*;
 
 class updateDB {
