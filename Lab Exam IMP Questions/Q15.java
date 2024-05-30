@@ -31,10 +31,14 @@ class Q15 {
 			
 			String sql = "SELECT * FROM StudentInfo";
 			ResultSet rs = stmt.executeQuery(sql);
+			System.out.println("The contents of the table are:");
 			while(rs.next()) {
+				//System.out.println(rs.getInt("RollNo") + " " + rs.getString("Name") + " " + rs.getString("USN") + " " + rs.getString("Division"));
 				System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3) + " " + rs.getString(4));
 			}
-			
+			conn.close();
+			stmt.close();
+			rs.close();
 		}catch(Exception e) {
 			System.out.println(e);
 		}
