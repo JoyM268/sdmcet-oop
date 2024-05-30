@@ -1,6 +1,5 @@
-/* Write a Java program that creates three threads. The first thread prints prime numbers from 1 to 100;
-second thread prints prime numbers from 101 to 200 and third thread prints prime numbers from 201 to 300. 
-[Hint: Use threads synchronization. The three threads must call the same method generatePrime() to print prime numbers.]  */
+/* Write a Java program that creates three threads. The first thread prints prime numbers from 1 to 100; second thread prints prime numbers from 101 to 200 
+and third thread prints prime numbers from 201 to 300. Note: The three threads must call the same method generatePrime() to print the prime numbers. */
 class primeNumber extends Thread {
     int start;
     int end;
@@ -30,7 +29,7 @@ class primeNumber extends Thread {
     }
 }
 
-public class Q5 {
+public class Q6 {
     public static void main(String[] args) {
         primeNumber t1 = new primeNumber(1, 100);
         primeNumber t2 = new primeNumber(101, 200);
