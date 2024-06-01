@@ -7,7 +7,7 @@ It has a class named Advanced and provides following methods:
 i) Calculates sine, cosine & tan of a degree 
 ii) Finds the sum of primary diagonal elements of a 3X3 matrix Create a class named MathTestDemo defined inside “sdmcet.cse.oop” package.
 This class has main() method and must invoke all the methods of Basic and Advanced classes. */
-package sdmcet.cse.oop.basicMath;
+package sdmcet.cse.oop.BasicMath;
 
 public class Basic {
     public boolean isPrime(int n){

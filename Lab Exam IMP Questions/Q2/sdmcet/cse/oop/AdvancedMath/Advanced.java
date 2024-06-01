@@ -10,13 +10,14 @@ This class has main() method and must invoke all the methods of Basic and Advanc
 package sdmcet.cse.oop.AdvancedMath;
 
 public class Advanced {
-    void findTrig(double degree){
-        System.out.println("sine of " + degree + " deg is " + Math.sin(degree));
-        System.out.println("cosine of " + degree + " deg is " + Math.cos(degree));
-        System.out.println("tan of " + degree + " deg is " + Math.tan(degree));
+    public void findTrig(double degree){
+        double rad = Math.toRadians(degree);
+        System.out.println("sine of " + degree + " deg is " + Math.sin(rad));
+        System.out.println("cosine of " + degree + " deg is " + Math.cos(rad));
+        System.out.println("tan of " + degree + " deg is " + Math.tan(rad));
     }
 
-    int sumPrimaryDiagonal(int[][] matrix){
+    public int sumPrimaryDiagonal(int[][] matrix){
         int sum = 0;
         for(int i = 0; i < matrix.length; i++){
             sum += matrix[i][i];
