@@ -1,32 +1,64 @@
 /* Write a Java program that simulates client-server interaction using threads. Methodology: Two threads should be created; one thread should act as server,
 and the other one should act as client. The server thread should accept a string from the client thread. Upon receiving and displaying the string, the server
 thread should send back the acknowledgement message "Message Received" to the client thread. */
+
+import java.util.Scanner;
+
 class request{
-    boolean sent = false;
-    synchronized void sendMessage(){
-        while(sent){
+    boolean msgSent = false;
+    boolean ackSent = false;
+    String msg;
+    String ack;
+    synchronized void sendMessage(String msg){
+        while(msgSent){
             try{
                 wait();
             }catch(InterruptedException ie){
                 System.out.println(ie);
             }
         }
-        System.out.println("Message Sent");
-        sent = true;
-        notify();
+        this.msg = msg;
+        msgSent = true;
+        notifyAll();
     }
 
-    synchronized void receiveMessage(){
-        while(!sent){
+    synchronized String receiveMessage(){
+        while(!msgSent){
             try{
                 wait();
             }catch(InterruptedException ie){
                 System.out.println(ie);
             }
         }
-        System.out.println("Message Received");
-        sent = false;
-        notify();
+        msgSent = false;
+        notifyAll();
+        return this.msg;
+    }
+
+    synchronized void sendAck(String ack){
+        while(ackSent){
+            try{
+                wait();
+            }catch(InterruptedException ie){
+                System.out.println(ie);
+            }
+        }
+        this.ack = ack;
+        ackSent = true;
+        notifyAll();
+    }
+
+    synchronized String receiveAck(){
+        while(!ackSent){
+            try{
+                wait();
+            }catch(InterruptedException ie){
+                System.out.println(ie);
+            }
+        }
+        ackSent = false;
+        notifyAll();
+        return this.ack;
     }
 }
 
@@ -38,7 +70,9 @@ class server extends Thread{
 
     public void run(){
         while(true){
-            req.receiveMessage();
+            String msg = req.receiveMessage();
+            System.out.println("Server Received: " + msg);
+            req.sendAck("Message Received");
         }
     }
 }
@@ -50,8 +84,12 @@ class client extends Thread{
     }
 
     public void run(){
+        Scanner sc = new Scanner(System.in);
         while(true) {
-            req.sendMessage();
+            System.out.print("Enter the String: ");
+            String msg = sc.nextLine();
+            req.sendMessage(msg);
+            System.out.println("Client Received: " + req.receiveAck());     
         }
     }
 }
