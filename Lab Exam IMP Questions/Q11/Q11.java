@@ -33,5 +33,6 @@ public class Q11 extends HttpServlet {
 		out.println("The number of vowels in the line of text is: <b>" + vowels + "</b><br>");
 		out.println("The number of consonants in the line of text is: <b>" + consonants + "</b>");
 		out.println("</body></html>");
+		out.close();
 	}
 }
