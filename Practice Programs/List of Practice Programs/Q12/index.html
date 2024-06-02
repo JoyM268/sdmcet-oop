@@ -1,0 +1,22 @@
+<!-- Write a Java servlet that implements a simple calculator. The program must provide following implementations:
+i) HTML file: displays a form, that reads two numbers from the user and provides the buttons: Add, Subtract, Multiply and Divide
+ii) Java Servlet: provides features to handle the request (from HTML file), computes the result and sends back the result in HTML format -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Q12 Simple Calculator</title>
+</head>
+<body>
+	<form action="Q12" method="post">
+		Enter first number:<br>
+		<input type="text" name="n1" style="margin-bottom:6px"><br>
+		Enter second number:<br>
+		<input type="text" name="n2" style="margin-bottom:10px"><br>
+		<input type="submit" value="Add" name="op">
+		<input type="submit" value="Subtract" name="op">
+		<input type="submit" value="Multiply" name="op">
+		<input type="submit" value="Divide" name="op">
+	</form>
+</body>
+</html>
