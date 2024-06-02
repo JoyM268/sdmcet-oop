@@ -1,0 +1,26 @@
+<!-- Write a JSP program that implements a simple calculator. 
+The program must provide the features to perform addition, subtraction, multiplication and division
+of two numbers based on user’s choice. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Q13 Simple Calculator</title>
+</head>
+<body>
+	<form action="calculate.jsp">
+		Enter first number:<br>
+		<input type="text" name="fn" style="margin-bottom:8px"><br>
+		Enter second number:<br>
+		<input type="text" name="sn" style="margin-bottom:8px"><br>
+		Enter operation:<br> 
+		<select name="op" style="margin-bottom:8px">
+			<option value="+">Addition</option>
+			<option value="-">Subtraction</option>
+			<option value="*">Multiplication</option>
+			<option value="/">Division</option>
+		</select><br>
+		<input type="submit" value="Calculate">
+	</form>
+</body>
+</html>
