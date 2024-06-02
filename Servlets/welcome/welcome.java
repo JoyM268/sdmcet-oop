@@ -1,3 +1,6 @@
+/* Create a dynamic web application to perform following operations:
+a) Create a html file to read first name and last name
+b) On clicking the submit button servlet prints welcome message along with the name on web browser */
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
