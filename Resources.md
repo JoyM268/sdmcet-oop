@@ -3,9 +3,8 @@
 ## OOP Courses:
 - [Java + OOP + DSA - Kunal Kushwaha](https://youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&feature=shared)
 - [Java Tutorial For beginners - Telusko](https://youtube.com/playlist?list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5&feature=shared)
+- [Servlet & JSP Tutorial - Telusko](https://youtu.be/OuBUUkQfBYM?feature=shared)
 - [JavaFX GUI Full Course - Bro Code](https://youtu.be/9XJicRt_FaI?feature=shared)
-- [Java Programming for Beginners Full Course - freeCodeCamp.org](https://youtu.be/A74TOX803D0?feature=shared)
-- [Java Programming - Neso Academy](https://youtube.com/playlist?list=PLBlnK6fEyqRjKA_NuK9mHmlk0dZzuP1P5&feature=shared)
 
 ## Documentation:
 - [Learn Java - dev.java](https://dev.java/learn/)
