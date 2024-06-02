@@ -5,6 +5,7 @@
 - [Java Tutorial For beginners - Telusko](https://youtube.com/playlist?list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5&feature=shared)
 - [Servlet & JSP Tutorial - Telusko](https://youtu.be/OuBUUkQfBYM?feature=shared)
 - [JavaFX GUI Full Course - Bro Code](https://youtu.be/9XJicRt_FaI?feature=shared)
+- [Master JDBC in One Shot - Indian Programmer](https://youtu.be/TcJZQvDE1ow?feature=shared)
 
 ## Documentation:
 - [Learn Java - dev.java](https://dev.java/learn/)
