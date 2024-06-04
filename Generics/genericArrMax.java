@@ -22,8 +22,6 @@ public class genericArrMax{
         Character[] c1 = {'c', 's', 'e'};
         
         System.out.println("Largest integer is: " + maxElement(a1));
-        maxElement(a1);
         System.out.println("Largest characters in:" + maxElement(c1));
-        maxElement(c1);
     }
 }
