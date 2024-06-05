@@ -18,7 +18,7 @@ class Q16Server {
             String msg = (String)din.readUTF();
             String reverse = new StringBuilder(msg).reverse().toString();
             System.out.println("The reverse of the string is: " + reverse);
-            System.out.println("The length of the string is:" + msg.length());
+            System.out.println("The length of the string is: " + msg.length());
             ss.close();
         } catch (Exception e) {
             System.out.println(e);
