@@ -19,7 +19,6 @@ class Q16Client {
             System.out.println(msg);
             String str = sc.nextLine();
             dout.writeUTF(str);
-            System.out.println("The reverse of string is: " + din.readUTF());
             sc.close();
             s.close();
         } catch (Exception e) {
