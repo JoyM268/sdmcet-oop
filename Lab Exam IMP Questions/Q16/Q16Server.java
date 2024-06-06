@@ -10,9 +10,7 @@ class Q16Server {
     public static void main(String[] args) {
         try {
             ServerSocket ss = new ServerSocket(6000);
-            System.out.println("Waiting for client...");
             Socket s = ss.accept();
-            System.out.println("Connected to client");
             DataInputStream din = new DataInputStream(s.getInputStream());
             DataOutputStream dout = new DataOutputStream(s.getOutputStream());
 
@@ -20,7 +18,7 @@ class Q16Server {
             String msg = (String)din.readUTF();
             String reverse = new StringBuilder(msg).reverse().toString();
             System.out.println("The reverse of the string is: " + reverse);
-            System.out.println("The length of the string is: " + msg.length());
+            System.out.println("The length of the string is:" + msg.length());
             ss.close();
         } catch (Exception e) {
             System.out.println(e);

@@ -19,7 +19,7 @@ class Q17{
             fr.close();
             fw.close();
         } catch (Exception e) {
-            System.out.println("The files entered are invaild are cannot be opened");
+            System.out.println("The files entered are invaild or cannot be opened");
         }      
     }
 }
