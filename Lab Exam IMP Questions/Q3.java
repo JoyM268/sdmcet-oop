@@ -26,6 +26,7 @@ class Q3{
                 System.out.println("String \"" + str + "\" is a palindrome");
             }
         }catch(Exception e){
+            //e.printStackTrace();
             System.out.println(e);
         }
     }

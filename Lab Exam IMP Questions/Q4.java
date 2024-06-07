@@ -32,6 +32,7 @@ public class Q4 {
                 System.out.println("Normal Temperature");
             }
         }catch(Exception e){
+            //e.printStackTrace();
             System.out.println(e);
         }
     }
