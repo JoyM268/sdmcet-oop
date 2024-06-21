@@ -32,7 +32,7 @@ class primeNumber extends Thread {
     }
 }
 
-public class Q2 {
+public class Q6 {
     public static void main(String[] args) {
         primeNumber t1 = new primeNumber(1, 100);
         primeNumber t2 = new primeNumber(101, 200);
