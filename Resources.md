@@ -6,7 +6,7 @@
 - [Servlet & JSP Tutorial - Telusko](https://youtu.be/OuBUUkQfBYM?feature=shared)
 - [Master JDBC in One Shot - Indian Programmer](https://youtu.be/TcJZQvDE1ow?feature=shared)
 - [JavaFX - Satish C J](https://youtube.com/playlist?list=PLLcbVqbhgEc3KkzT4wvK_6jd3jDZtS6kK&feature=shared)
-- [Lambda Expressions - JavaFX - Satish C J](https://youtu.be/6ujWMUuR3QY?feature=shared)
+- [Lambda Expressions - Satish C J](https://youtu.be/6ujWMUuR3QY?feature=shared)
 
 ## Documentation:
 - [Learn Java - dev.java](https://dev.java/learn/)
