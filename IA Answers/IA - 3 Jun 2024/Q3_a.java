@@ -32,8 +32,8 @@ class Q3_a {
 			ResultSet rs = stmt.executeQuery(sql);
 			System.out.println("The contents of the table are:");
 			while(rs.next()) {
-				//System.out.println(rs.getInt("ISBN") + " " + rs.getString("Title") + " " + rs.getString("Author") + " " + rs.getString("Publisher") + rs.getFloat("Price"));
-				System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3) + " " + rs.getString(4) + " " + rs.getFloat(5));
+				//System.out.println(rs.getInt("ISBN") + " " + rs.getString("Title") + " " + rs.getString("Author") + " " + rs.getString("Publisher") + rs.getDouble("Price"));
+				System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3) + " " + rs.getString(4) + " " + rs.getDouble(5));
 			}
 			conn.close();
 			stmt.close();
